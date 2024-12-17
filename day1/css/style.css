@@ -1,0 +1,182 @@
+p{
+  margin-top: 1px;
+  margin-right: 2px;
+  margin-bottom: 3px;
+  margin-left: 4px;
+  margin: 1px 2px 3px 4px;
+  margin: 1px 2px 3px;
+  margin: 1px 2px;
+  margin: 24px;
+
+
+}
+
+p.demo{
+  text-align: right;
+}
+
+p#heading{
+  font-size: 10px;
+}
+
+h1 p{
+  background-color: rgb(75, 149, 161);
+}
+ 
+div > p{
+  font-size: large;
+  background-color: rgba(75, 149, 161,0.3);
+  border:2px white double;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+div + p{
+  background-color: rebeccapurple;
+}
+
+div ~ p{
+  background-color: rgb(203, 214, 103);
+}
+.links{
+ 
+  border: 3px solid rgba(63, 63, 187, 0.397) ;
+  background-color:#b0b4b7;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 10px;
+}
+
+.links a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+.links a:visited {
+  color: rgb(45, 9, 204); 
+}
+
+h1::first-letter{
+  
+  color:blue;
+}
+
+h1{
+  border:small solid red;
+  border-radius: 3px;
+  font-size: 30px;
+}
+
+h1+div{
+  
+  padding: 2px 25px 12px;
+  border: 1px solid black;
+
+  background: url(../images/img1.jpg);
+  background-size: cover;
+}
+body{
+  max-width: auto;
+  padding: 20px 60px;
+  background: url("https://marketplace.canva.com/EAFJ_EHcmNA/1/0/1600w/canva-abstract-pastel-background-desktop-wallpaper-KtuyBRXG1OA.jpg");
+  background-size: cover;
+}
+
+ol{
+  list-style-type: upper-alpha;
+  background-color: rgba(201, 146, 84,0.7);
+  margin: 14px;
+  width: 95px;
+  padding: 5px 15px;
+  align-items: center;
+  float:left;
+}
+
+ul{
+ 
+list-style: square inside ;
+padding: 4px;
+width:100px;
+border-style: double;
+align-items: center;
+float: left;
+margin: 14px;
+}
+
+li{
+  background-color: blanchedalmond;
+  margin: 8px;
+  border: 2px black solid;
+  padding: 2px;
+}
+
+.demo{
+  background-color: rgb(236, 173, 173);
+  border: 8px double rgba(6, 12, 14, 0.5);
+  
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  
+}
+.demo div{
+  background-color: #e2eccb;
+  border: 2px dotted;
+  padding: 2px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  margin: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.box1{
+  background-color:#ffc2b5;
+  margin-top: 2px;
+ 
+}
+
+.box2{
+  background-color:#b0b4b7;
+  
+}
+
+.box3{
+  background-color: #dd9d60;
+ 
+}
+
+
+
+.content {
+  flex: 3;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+*{
+  /*font-family: 'Agu Display', 'Noto Sans JP', sans-serif;*/
+  font-family: 'Agu Display', 'Noto Sans JP', 'Silkscreen', sans-serif;
+
+}  
