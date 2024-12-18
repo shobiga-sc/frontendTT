@@ -1,0 +1,48 @@
+.container {
+    margin: 20px;
+    overflow: hidden; 
+    content:"";
+    
+  }
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .image {
+    float: left;
+    margin-right: 20px;
+    max-width: 150px; 
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .content {
+    overflow: hidden; 
+    vertical-align: top;
+    border:2px double;
+    width:70%;
+  
+  }
+
+
+  .image2 {
+    float: right; 
+    margin-right: 200px; 
+    max-width: 150px; 
+    vertical-align: top; 
+  }
+
+  .image2 img {
+    float: right;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+ 
