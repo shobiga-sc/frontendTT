@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Noto+Sans+JP:wght@100..900&family=Sen:wght@400..800&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f9fbfd425c.js" crossorigin="anonymous"></script>
+    <title>Finsweet</title>
+</head>
+
+<body>
+
+
+    <!-- <header class="header">
+        <div class="container">
+            <div class="flex-menu">
+                <a href="#logo"> <img src=".\images\Logo.png"
+                        alt="Logo of Finsweet" class="responsive"></a>
+
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li><a href="#home"> Home</a></li>
+                        <li><a href="#blog"> Blog</a></li>
+                        <li><a href="#about-us"> About Us</a></li>
+                        <li><a href="#contact=us">Contact Us</a></li>
+                        <div class="subscription"><button
+                                onclick="window.location.href='https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test;'">Subscribe</button>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header> -->
+
+
+    <div class="head">
+
+    <header class="header">
+        <div class="container">
+            <div class="flex-menu">
+                <a href="#logo">
+                    <img src=".\images\Logo.png" alt="Logo of Finsweet" >
+                </a>
+                <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#contact-us">Contact Us</a></li>
+                        <div class="subscription">
+                            <button onclick="window.location.href='https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test;'">
+                                Subscribe
+                            </button>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+
+    <div class="intro">
+        <div class="home-guide">
+            <p>POSTED ON <b>STARTUP</b></p>
+
+            <h1 class="big-font">Step-by-step guide to choosing <br>great font pairs</h1>
+            <p>By <span class="author"> James West </span> | May 23, 2022 </p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu <br>fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+            <div class="read-more"><button
+                    onclick="window.location.href='https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test;'"><b>Read
+                        More ></b></button></div>
+        </div>
+    </div>
+    <div class="common">
+        <div class="post">
+            <div class="featured-post">
+                <h1>Featured Post</h1>
+                <div class="fp-card"><img
+                        src=".\images\white-concrete-building-1838640.png"
+                        alt="post of a buliding">
+                    <p>By <span class="post-author"> John Doe </span>| May 23, 2022</p>
+
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                        Excepteur sint occaecat cupidatat non proident.</p>
+                    <div class="read-more"><button
+                            onclick="window.location.href='https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test;'"><b>Read
+                                More ></b></button></div>
+                </div>
+            </div>
+            <div class="all-posts">
+                <div class="all-posts-top">
+                    <h1>All Posts</h1>
+                    <a href="#view-all-posts">View All</a>
+                </div>
+                <ul>
+                    <li>
+                        <div class="one-post">
+                            <p>By <span class="post-author"> John Doe </span> | May 23, 2022</p>
+
+                            <h2>8 Figma design systems that you can download for free today.</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="one-post">
+                            <p>By<span class="post-author"> John Doe </span>| May 23, 2022</p>
+
+                            <h2>8 Figma design systems that you can download for free today.</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="one-post">
+                            <p>By <span class="post-author"> John Doe </span> | May 23, 2022</p>
+
+                            <h2>8 Figma design systems that you can download for free today.</h2>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="one-post">
+                            <p>By <span class="post-author"> John Doe </span>| May 23, 2022</p>
+
+                            <h2>8 Figma design systems that you can download for free today.</h2>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="moto">
+            <div class="pattern">
+                <img src=".\images\pattern.png" alt="design line">
+            </div>
+            <div class="moto-div">
+                <div class="about-us">
+                    <b>
+                        <p>ABOUT US</p>
+                    </b>
+                    <h1>We are a community of content writers who share their learnings</h1>
+                    <small>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</p>
+                    </small>
+                    <div class="read-more-no-bg"><button
+                            onclick="window.location.href='https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test;'"><b>Read
+                                More ></b></button></div>
+                </div>
+                <div class="mission">
+                    <b>
+                        <p>OUR MISSION</p>
+                    </b>
+                    <h2>Creating valuable content for creatives all around the world</h2>
+                    <small>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </small>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h1>Choose a Catagory</h1>
+            <ul>
+                <li>
+                    <div class="one-catagory">
+                        <div class="catg-icon1"><img
+                                src=".\images\Icon.png"
+                                alt="buscineess icon"></div>
+                        <h2>Business</h2>
+                        <p><small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="one-catagory">
+                        <div class="catg-icon"><img
+                                src=".\images\Icon (1).png"
+                                alt="rocket img"></div>
+                        <h2>Startup</h2>
+                        <p><small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="one-catagory">
+                        <div class="catg-icon"><img
+                                src=".\images\economy (1).png"
+                                alt="economy"></div>
+                        <h2>Economy</h2>
+                        <p><small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="one-catagory">
+                        <div class="catg-icon"><img
+                                src=".\images\cyborg.png" alt="cyborg">
+                        </div>
+                        <h2>Technology</h2>
+                        <p><small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</small></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="rel-history">
+        <div class="history">
+
+            <div class="history-img"><img src=".\images\group.png"
+                    alt="team unity"> </div>
+            <div class="story">
+                <b>
+                    <p>WHY WE STARTED</p>
+                </b>
+                <h1>It started out as a simple idea and evolved into our passion</h1>
+                <small>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip.</p>
+                </small>
+                <div class="read-more"><button
+                        onclick="window.location.href='https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test;'"><b>
+                            Discover Our Story ></b></button></div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+        <div class="author-list">
+            <h1>List Of Authors</h1>
+            <ul>
+                <li>
+                    <div class="one-author-list">
+                        <centre><img src=".\images\author4.png" alt="author img" class="photo-author"></centre>
+                        <h2>Floyd Miles</h2>
+                        <p>Content Writer @Company</p>
+                        <div class="social-media">
+                            <a href="#fb"> <img src=".\images\fb.png" alt="fb"></a>
+                            <a href="#twitter"> <img src=".\images\twitter.png" alt="twitter"></a>
+                            <a href="#insta"> <img src=".\images\insta.png" alt="insta"></a>
+                            <a href="#linkedin"> <img src=".\images\linkedin.png" alt="linkedin"></a>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="one-author-list">
+                        <centre><img src=".\images\author3.png" alt="author img"  class="photo-author"></centre>
+                        <h2>Dianne Russell</h2>
+                        <p>Content Writer @Company</p>
+                        <div class="social-media">
+                            <a href="#fb"> <img src=".\images\fb.png" alt="fb"></a>
+                            <a href="#twitter"> <img src=".\images\twitter.png" alt="twitter"></a>
+                            <a href="#insta"> <img src=".\images\insta.png" alt="insta"></a>
+                            <a href="#linkedin"> <img src=".\images\linkedin.png" alt="linkedin"></a>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="one-author-list">
+                        <centre> <img src=".\images\author2.png" alt="author img"  class="photo-author"></centre>
+                        <h2>Jenny Wilson</h2>
+                        <p>Content Writer @Company</p>
+                        <div class="social-media">
+                            <a href="#fb"> <img src=".\images\fb.png" alt="fb"></a>
+                            <a href="#twitter"> <img src=".\images\twitter.png" alt="twitter"></a>
+                            <a href="#insta"> <img src=".\images\insta.png" alt="insta"></a>
+                            <a href="#linkedin"> <img src=".\images\linkedin.png" alt="linkedin"></a>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="one-author-list">
+                        <centre><img src=".\images\author1.png" alt="author img"  class="photo-author"></centre>
+                        <h2>Leslie Alexander</h2>
+                        <p>Content Writer @Company</p>
+                        <div class="social-media">
+                            <a href="#fb"> <img src=".\images\fb.png" alt="fb"></a>
+                            <a href="#twitter"> <img src=".\images\twitter.png" alt="twitter"></a>
+                            <a href="#insta"> <img src=".\images\insta.png" alt="insta"></a>
+                            <a href="#linkedin"> <img src=".\images\linkedin.png" alt="linkedin"></a>
+
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <div class="features">
+            <div class="feature-head">
+                <p>We are</p>
+                <h2>Featured in</h2>
+            </div>
+            <img src=".\images\Logo 1.png" alt="logo">
+            <img src=".\images\Logo 2.png" alt="logo">
+            <img src=".\images\Logo 3.png" alt="logo">
+            <img src=".\images\Logo 4.png" alt="logo">
+            <img src=".\images\Logo 5.png" alt="logo">
+        </div>
+
+
+
+        <div class="details">
+            <div class="testimonials">
+                <p>TESTIMONIALS</p>
+                <h1>What people say about our blog</h1>
+                <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</small></p>
+            </div>
+            <img src=".\images\Line 1.png" alt="line">
+            <div class="details-2">
+                <div class="about-creator">
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</h2>
+                </div>
+                <div class="auth-details">
+                    <div class="auth-name">
+                        <div class="auth-photo"> <img src=".\images\Profile picture.png" alt="author"></div>
+                        <div class="auth-place">
+                            <h2> Jonathan Vallem</h2>
+                            <p><small>New york, USA</small></p>
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <a href="#before"><i class='fas fa-arrow-left'></i></a>
+                        <a href="#after"><i class='fas fa-arrow-right'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="team">
+            <h1>Join our team to be a part of our story</h1>
+            <p><small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</small>
+            </p>
+            <div class="read-more"><button
+                    onclick="window.location.href='https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_button_test;'"><b>
+                        Join Now </b></button>
+            </div>
+            <br>
+        </div>
+
+
+
+    </div>
+
+
+    <footer class="footer foot" >
+        
+        <div class="foot-nav">
+            <a href="#logo"> <img src=".\images\Logo.png"
+                alt="Logo of Finsweet" class="foot-logo"></a>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="about-us">About Us</a></li>
+                <li><a href="contact-us">Contact Us</a></li>
+                <li><a href="privacy-policy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="foot-contact">
+            <h1>Subscribe to our news letter to get latest updates and news</h1>
+            <div class="contact-email">
+                <form>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                <input type="submit" value="Subscribe">
+             </form> 
+            </div>
+        </div>
+        <div class="foot-media">
+            <div class="copyright">
+                <p><small>Finstreet 118 2561 Fintown</small></p>
+                <p><small>Hello@finsweet.com  020 7993 2905</small></p>
+            </div>
+            <div class="social-media">
+                <a href="#fb"> <img src=".\images\fb.png" alt="fb"></a>
+                <a href="#twitter"> <img src=".\images\twitter.png" alt="twitter"></a>
+                <a href="#insta"> <img src=".\images\insta.png" alt="insta"></a>
+                <a href="#linkedin"> <img src=".\images\linkedin.png" alt="linkedin"></a>
+
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>

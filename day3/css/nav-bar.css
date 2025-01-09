@@ -126,3 +126,6 @@ ul {
   .flex-dropdown:hover .flex-dropdown-content {
     display: block;
   } */
+
+
+  .left-float{float:left;}
