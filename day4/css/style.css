@@ -693,6 +693,7 @@ h2 {
 
 
 .author-list {
+    width:90%;
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -1169,6 +1170,17 @@ input[type=submit]:hover {
         flex-shrink: 0;
     
     
+    
+    }
+
+    .author-list>ul>li .one-author-list {
+        width: 240px;
+        height: 327px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
     
     }
     

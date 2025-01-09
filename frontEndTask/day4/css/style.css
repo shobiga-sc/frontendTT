@@ -690,6 +690,18 @@ input[type=submit]:hover {
 
 }
 
+
+.author-list>ul>li .one-author-list {
+    width: 240px;
+    height: 327px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
 }
 
 @media (max-width: 1024px) {
