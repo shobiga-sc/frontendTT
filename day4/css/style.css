@@ -112,7 +112,7 @@
 
 .flex-menu {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     padding: 25px 0;
 }
@@ -139,6 +139,16 @@
     display: flex;
     align-items: center;
 }
+.menu li a {
+    display: inline-block; 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.menu li a:hover {
+    transform: scale(1.15);
+   
+}
+
 
 .navbar .menu .subscription button {
     background-color: #fdfeff;
@@ -226,6 +236,7 @@
     /* Align content to the left */
 
 }
+
 
 .home-guide {
     display: flex;
@@ -406,12 +417,14 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 
-    transition: background-color 0.3s;
+   
 }
 
 .all-posts li:hover {
     background-color: rgb(250, 234, 237);
+    transform: scale(1.05); 
 }
 
 .one-post p {
@@ -628,6 +641,22 @@ h2 {
     border-radius: 10px;
 }
 
+/* .category ul li .one-catagory {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+    padding: 25px;
+    border: 1px solid rgb(197, 197, 197);
+    margin-bottom: 20px;
+   
+    text-align: center;
+}
+
+.category ul li .one-catagory:hover {
+    background-color: #f3b919;
+} */
+
 .category ul li .one-catagory {
     display: flex;
     flex-direction: column;
@@ -638,10 +667,12 @@ h2 {
     margin-bottom: 20px;
     /* Space between items */
     text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .category ul li .one-catagory:hover {
     background-color: #f3b919;
+    transform: scale(1.05); /* Slightly enlarges the element on hover */
 }
 
 
@@ -736,11 +767,13 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 
 }
 
 .one-author-list:hover {
     background-color: rgb(250, 234, 237);
+    transform: scale(1.05); 
 }
 
 .social-media img {
@@ -840,7 +873,11 @@ h2 {
     background-color: white;
     border-radius: 100%;
     text-decoration: none;
+    width: 50px;
+    height: auto;
     padding: 15px;
+    align-items: center;
+    text-align: center;
 
 
     /* margin-right: 10px; */
@@ -915,7 +952,18 @@ h2 {
     text-decoration: none;
     padding: 0 10px;
     color: white;
+  
 }
+.foot-nav ul li a {
+    display: inline-block; 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.foot-nav ul li a:hover {
+    transform: scale(1.15);
+   
+}
+
 
 
 .foot-contact {
@@ -947,13 +995,14 @@ input {
 
 input[type=email] {
     background-color: rgb(22, 22, 22);
-    border-color: 1px solid rgb(197, 197, 197);
+    border: 1px solid rgb(197, 197, 197);
     padding: 2px;
     padding-left: 15px;
     color: white;
     margin-right: 10px;
     flex-wrap: wrap;
 }
+
 
 input[type=submit] {
     background-color: #f3b919;
@@ -1240,6 +1289,12 @@ input[type=submit]:hover {
         max-width: 90%;
     }
 
+    .all-posts{
+        padding: 40px;
+        width:100%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
     h1 {
         font-size: larger;
     }
@@ -1368,6 +1423,7 @@ input[type=submit]:hover {
 
 
     .features {
+       
         width: 85%;
 
     }
@@ -1553,20 +1609,48 @@ input[type=submit]:hover {
         font-size: 18px;
     }
 
+    .post{
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .featured-post h1{
+        margin-bottom: 15px;
+        margin-left: 30px;
+      
+       
+    }
+    .featured-post{
+        margin: 0 auto;
+       width: 100%;
+       
+    }
+
+  
+
     .fp-card {
         gap: 15px;
     }
 
     .fp-card,
     .all-posts {
+        margin: 0 auto;
         width: 100%;
     }
 
     .all-posts ul li {
         padding: 10px;
         margin: 15px;
+        align-items: center;
 
     }
+
+
+
+    
+
+
+    
 
     h1 {
         font-size: 16px;
@@ -1871,11 +1955,11 @@ input[type=submit]:hover {
 
 }
 
-@media (max-width: 480px) {
-    .flex-menu {
+@media (max-width: 499px) {
+    /* .flex-menu {
         flex-direction: column;
        height: 80px;
-    }
+    } */
 
     .navbar ul li a {
         font-size: 16px;
@@ -1982,8 +2066,10 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 
+ 
 
     .category ul {
+    
         gap: 10px;
         flex-direction: column;
         /* Stack items vertically */
@@ -1993,7 +2079,9 @@ input[type=submit]:hover {
     }
 
     .category ul li .one-catagory {
+        min-width: 300px;
         width: 90%;
+    
         /* Full width on very small screens */
         padding: 15px;
     }
@@ -2179,6 +2267,12 @@ input[type=submit]:hover {
 
 @media (max-width: 320px) {
 
+    
+
+    .category ul li .one-catagory {
+        min-width: 200px;
+       
+    }
 
     h2 {
         font-size: 8px;
